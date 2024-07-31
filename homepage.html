@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial do Facebook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="cover-photo">
+            <img src="imgs/cover-photo.png" alt="Foto de Capa">
+        </div>
+        <div class="profile-photo">
+            <img src="imgs/profile-photo.jpg" alt="Foto de Perfil">
+        </div>
+    </header>
+    <main class="main-content">
+        <h1>Seja bem vindo, <span id="username">Username</span>!</h1>
+        <p>Descrição do perfil ou bio aqui. Escreva algo sobre você ou sobre a página.</p>
+    </main>
+    <script>
+        function getParameterByName(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+        const username = getParameterByName('username');
+        if (username) {
+            document.getElementById('username').textContent = username;
+        }
+    </script>
+</body>
+</html>

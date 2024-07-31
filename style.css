@@ -1,0 +1,98 @@
+/* Reseta algumas propriedades padrões */
+body, h1, input, button, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-esq {
+    text-align: center;
+    margin-right: 50px;
+}
+
+.login-esq img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.login-esq h1 {
+    font-size: 24px;
+    color: #1c1e21;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input {
+    width: 280px; /* Ajuste para corresponder ao botão */
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 300px; /* Ajuste para corresponder à largura dos inputs */
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1877f2;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.criar {
+    font-weight: bold;
+    background-color: #68C555;
+    transition: 0.3s;
+}
+
+.criar:hover {
+    background-color: #58a748;
+    transition: 0.3s;
+}
+
+.logar {
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.logar:hover {
+    background-color: #1465cf;
+    transition: 0.3s;
+}
+
+a {
+    color: #1877f2;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+div {
+    margin: 10px 0;
+    color: #ccc;
+}
